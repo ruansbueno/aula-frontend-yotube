@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto';
+}
+
+:root{
+	--azul: #29b6f6;
+	--dourado-claro:#ff9800;
+	--dourado-escuro:#ff8f00;
+}
+
+.container{
+	width: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+header{
+	background-color: var(--azul);
+	color: #fff;
+	padding: 12px 0;
+}
+
+header .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .container h1{
+	font-weight: 400;
+}
+
+header .container a{
+	text-decoration: none;
+	color: #fff;
+	transition: .4s;
+}
+
+header .container a:hover{
+	color: #eee;
+}
+
+main .container section.banner{
+	text-align: center;
+	margin: 110px 0;
+}
+
+main .container section.banner h2{
+	color: var(--dourado-claro);
+	font-weight: 400;
+	font-size: 65px;
+	margin-bottom: 30px;
+}
+
+main .container section.banner p{
+	font-size: 24px;
+	margin-bottom: 30px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, .8);
+}
+
+main .container section.banner a{
+	font-size: 19px;
+	padding: 15px 20px;
+	background-color: var(--dourado-claro);
+	border: none;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .4s;
+	text-decoration: none;
+	display: inline-block;
+}
+
+main .container section.banner a:hover{
+	background-color: var(--dourado-escuro);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
+}
